@@ -10,8 +10,6 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
 PRODUCT_NAME := twrp_vince
-BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
-TARGET_VENDOR := Xiaomi
