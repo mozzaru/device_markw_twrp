@@ -15,7 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_vince.mk
+    $(LOCAL_DIR)/twrp_markw.mk
 
 COMMON_LUNCH_CHOICES := \
-     omni_vince-eng
+    twrp_markw-user \
+    twrp_markw-userdebug \
+    twrp_markw-eng
+

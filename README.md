@@ -1,65 +1,43 @@
-# For building TWRP for Xiaomi Redmi 5 Plus (Global) & Redmi Note 5 (India) ONLY
+# TWRP (FBE support) Device Tree for Xiaomi Redmi (Hongmi) 4 (Prime/Pro/Premium) (Markw/wt88553)
+========================================================================================
 
-To compile:
+Basic   | Spec Sheet
+-------:|:-------------------------
+CPU     | Octa-core 2.0 GHz Cortex-A53
+Chipset | Qualcomm MSM8953 Snapdragon 625
+GPU     | Adreno 506
+Memory  | 3 GB
+Shipped Android Version | Android 6.0.1 with MIUI 8/9/10
+Storage | 32 GB (Samsung RX1BMB/Hynix HBG4a2/Toshiba 032G32)
+MicroSD | Up to 256 GB (uses SIM 2 slot)
+Battery | 4000 mAh (non-removable Li-Po) (Coslight/Feimaotui)
+Dimensions | 141.3 x 69.6 x 8.9 mm (5.56 x 2.74 x 0.35 in)
+Weight | 156 g (5.50 oz)
+Build | Front glass, aluminum body
+SIM | Hybrid Dual SIM
+Display | 1080 x 1920 pixels,16:9 ratio (~441 ppi density), 5.0" IPS (Tianma r63350/EBBG nt35521s/EBBG nt35596)
+Touchscreen | FOCALTECH FT5346 (for Tianma)/ATMEL A308U (for EBBG)
+Rear Camera  | 13.0 MP, PDAF, f/2.2, Dual LED flash (Samsung S5K3L8(qtech/ofilm/sunny)/OmniVision OV13853)
+Front Camera | 5.0 MP, f/2.2 (OmniVision OV5670)
+FingerPrint | Yes (FPC 1020/Goodix GF3208)
+Accelerometer | Yes (Bosch BMI160)
+Magnetometer | Yes (Yamaha YAS537)
+Network Technology | GSM / CDMA / HSPA / EVDO / LTE
+Alert types | Vibration, MP3, WAV ringtones
+Loudspeaker | Yes 
+3.5mm jack | Yes
+NFC | No
+QC Support | No
+Bluetooth | 4.2, A2DP, LE
+WLAN | Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot
+GPS | Yes, with A-GPS, GLONASS, BDS
+Infrared port |	Yes
+Radio |	FM radio
+USB | microUSB 2.0, USB On-The-Go
+Als/ps | Yes (Liteon LTR55X)
+LED | Yes (Awinic AW2013)
+Release Date | November 2016
 
-```
-. build/envsetup.sh 
-lunch omni_vince-eng
-mka recoveryimage
-```
+![Xiaomi Redmi 4 Prime](https://ixbt.online/live/images/original/00/00/07/2016/12/23/ed26fbbef4.jpg "Xiaomi Redmi 4 Prime")
 
-Kernel source: [StormBreaker-Project for vince](https://github.com/stormbreaker-project/kernel_xiaomi_vince)
 
-## Spec Sheet
-
-| Feature                 | Specification                     |
-| :---------------------- | :-------------------------------- |
-| CPU                     | Octa-core 2.0 GHz Cortex-A53      |
-| Chipset                 | Qualcomm MSM8953 Snapdragon 625   |
-| GPU                     | Adreno 506                        |
-| Memory                  | 3/4 GB                            |
-| Shipped Android Version | 7.1.2                             |
-| Storage                 | 32/64 GB                          |
-| MicroSD                 | Up to 256 GB                      |
-| Battery                 | 4000 mAh (non-removable)          |
-| Dimensions              | 151 x 76 x 8.5 mm                 |
-| Display                 | 1080x2160 pixels, 5.99 (~401 PPI) |
-| Rear Camera             | 12 MP, LED flash                  |
-| Front Camera            | 5 MP, LED flash                   |
-| Release Date            | February 2018                     |
-
------------------------------------------------------------------
-
-➜ Blocking checks
-- [x] Correct screen/recovery size
-- [x] Working Touch, screen
-- [x] Backup to internal/microSD
-- [x] Restore from internal/microSD
-- [x] reboot to system
-- [x] ADB
-
-➜ Medium checks
-- [x] update.zip sideload
-- [x] UI colors (red/blue inversions)
-- [x] Screen goes off and on
-- [x] F2FS/EXT4 Support, exFAT/NTFS where supported
-- [x] all important partitions listed in mount/backup lists
-- [x] backup/restore to/from external (USB-OTG) storage
-- [x] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
-- [x] Correct date
-- [x] decrypt /data
-
-➜ Minor checks
-- [x] MTP export
-- [x] reboot to bootloader
-- [x] reboot to recovery
-- [x] poweroff
-- [x] battery level
-- [x] temperature
-- [?] input devices via USB (USB-OTG) - keyboard, mouse(works) and disks
-- [x] USB mass storage export
-- [x] set brightness
-- [x] vibrate
-- [x] screenshot
-- [x] partition SD card
-- [?] encrypted backups(doesn't ask password during restore)

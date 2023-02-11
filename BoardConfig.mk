@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/vince
+DEVICE_PATH := device/xiaomi/markw
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
