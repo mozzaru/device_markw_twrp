@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/vince
+DEVICE_PATH := device/xiaomi/markw
 
 # Architecture
 TARGET_ARCH := arm64
