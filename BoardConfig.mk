@@ -36,7 +36,7 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := vince
+TARGET_OTA_ASSERT_DEVICE := markw
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8953
@@ -61,8 +61,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_vince
-TARGET_RECOVERY_DEVICE_MODULES := libinit_vince
+TARGET_INIT_VENDOR_LIB := libinit_markw
+TARGET_RECOVERY_DEVICE_MODULES := libinit_markw
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
@@ -87,8 +87,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/xiaomi/vince
-TARGET_KERNEL_CONFIG := vince-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/markw
+TARGET_KERNEL_CONFIG := markw_defconfig
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 
 # Partitions

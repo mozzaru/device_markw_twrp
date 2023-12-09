@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/vince
+LOCAL_PATH := device/xiaomi/markw
 
 # Crypto
 PRODUCT_PACKAGES += \
